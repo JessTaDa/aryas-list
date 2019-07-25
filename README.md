@@ -25,7 +25,7 @@ Create a new folder where you want your project to be. From the root folder:
 ## User Guide
 - Application window should open once packages are installed.
 - To add a victim click 'Start' on the top left, then 'Add victim'. The following window should pop up ![aryas_list_addWindow](https://user-images.githubusercontent.com/17763644/61831817-ecb6c480-ae23-11e9-89d5-e01592350e15.png)
-Fill out the name of the victim an click 'Should be dead'.
+- Fill out the name of the victim an click 'Should be dead'.
 The new victim should now appear on your list.
 
 - Inspired by @bradtraversy's shopping list [app](https://github.com/bradtraversy/electronshoppinglist)
