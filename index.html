@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>⚔️ Arya's List ️⚔️ </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+    <div class="brand-logo center">
+      <img src="arya.jpeg" alt="" height="200vw" width="200vw" >
+    </div>
+    <nav class="grey grey darken-2 center">
+        <a style="font-family: 'cursive'" class="brand-logo center">⚔️  ARYA'S LIST  ⚔️</a>
+    </nav>
+    <div class="center">
+      <ul></ul>
+    </div>
+      <script>
+      const { ipcRenderer } = require('electron')
+      const ul = document.querySelector('ul')
+
+      // Add victim
+      ipcRenderer.on('victim:add', function(e, victim){
+        ul.className = 'collection'
+        const li = document.createElement('li')
+        li.className = 'collection-item'
+        const victimText = document.createTextNode(victim)
+        li.appendChild(victimText)
+        ul.appendChild(li)
+      })
+
+      // Clear victim
+      ipcRenderer.on('victim:clear', function(){
+       ul.innerHTML = '';
+       ul.className = '';
+      })
+
+      // Remove victim
+      ul.addEventListener('dblclick', removeVictim)
+      function removeVictim(e){
+        e.target.remove()
+        if(ul.children.length == 0){
+          ul.className = '';
+        }
+      }
+
+    </script>
+  </body>
+</html>
