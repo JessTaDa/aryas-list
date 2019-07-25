@@ -14,11 +14,11 @@ Create a new folder where you want your project to be. From the root folder:
 #### Step 3:
   ```$ npm install ```
 #### Step 4:
-For MacOS users:
+- For MacOS users:
 ```$ npm run package-mac"```
-For MacOS users:
+- For MacOS users:
 ```$ npm run package-mac"```
-For MacOS users:
+- For MacOS users:
 ```$ npm run package-mac"```
 
 
