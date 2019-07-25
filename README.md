@@ -17,9 +17,9 @@ Create a new folder where you want your project to be. From the root folder:
 - For MacOS users:
 ```$ npm run package-mac"```
 - For MacOS users:
-```$ npm run package-mac"```
+```$ npm run package-win"```
 - For MacOS users:
-```$ npm run package-mac"```
+```$ npm run package-linux"```
 
 
 ## User Guide
