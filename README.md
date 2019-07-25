@@ -28,4 +28,4 @@ Create a new folder where you want your project to be. From the root folder:
 Fill out the name of the victim an click 'Should be dead'.
 The new victim should now appear on your list.
 
-Inspired by @bradtraversy's shopping list [app](https://github.com/bradtraversy/electronshoppinglist)
+- Inspired by @bradtraversy's shopping list [app](https://github.com/bradtraversy/electronshoppinglist)
